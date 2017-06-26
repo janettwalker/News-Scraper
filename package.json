@@ -1,0 +1,38 @@
+{
+  "name": "news-scraper",
+  "version": "1.0.0",
+  "description": "A web app that allows users to leave comments on the latest news. The news is obtained through another site but the data is scraped using cheerio and mongoose.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janettwalker/News-Scraper.git"
+  },
+  "keywords": [
+    "news",
+    "scraper",
+    "user",
+    "comments",
+    "cheerio",
+    "mongoose",
+    "mongodb"
+  ],
+  "author": "Janet Walker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janettwalker/News-Scraper/issues"
+  },
+  "homepage": "https://github.com/janettwalker/News-Scraper#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cheerio": "^1.0.0-rc.1",
+    "express": "^4.15.3",
+    "handlebars": "^4.0.10",
+    "mongoose": "^4.10.7",
+    "morgan": "^1.8.2",
+    "newyorktimes": "0.0.2",
+    "request": "^2.81.0"
+  }
+}
