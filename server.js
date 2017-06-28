@@ -12,6 +12,7 @@ var News = require("./models/News.js");
 // Require request and cheerio. This makes the scraping possible
 var request = require("request");
 var cheerio = require("cheerio");
+var PORT = process.env.PORT || 8080;
 
 // Set mongoose to leverage built in Javascript ES6 Promises
 mongoose.Promise = Promise;
@@ -30,6 +31,8 @@ app.use(bodyParser.urlencoded({
 }));
 
 // Database configuration with mongoose
+// mongodb://localhost/week18day3mongoose
+// mongodb://janettwalker:tminus987@ds135812.mlab.com:35812/articlescraper
 mongoose.connect("mongodb://janettwalker:tminus987@ds135812.mlab.com:35812/articlescraper");
 var db = mongoose.connection;
 
@@ -162,6 +165,6 @@ app.post("/news/:id", function(req, res) {
 
 
 // Listen on port 3000
-app.listen(3000, function() {
+app.listen(PORT, function() {
   console.log("App running on port 3000!");
 });
