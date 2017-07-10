@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({
 // Database configuration with mongoose
 // mongodb://localhost/week18day3mongoose
 // mongodb://janettwalker:tminus987@ds135812.mlab.com:35812/articlescraper
-mongoose.connect("mongodb://janettwalker:tminus987@ds135812.mlab.com:35812/articlescraper");
+mongoose.connect("mongodb://localhost/week18day3mongoose");
 var db = mongoose.connection;
 
 // Show any mongoose errors
@@ -166,5 +166,5 @@ app.post("/news/:id", function(req, res) {
 
 // Listen on port 3000
 app.listen(PORT, function() {
-  console.log("App running on port 3000!");
+  console.log("App running on port 8080!");
 });
